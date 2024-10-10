@@ -12,19 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
-        primary: "#576cbc",
-        secondary: "#19376d",
-        dark: "#0b2447",
+        navbar: "var(--navbarcolor)",
+
+        text: "#1F1F1F",
+        text_secondary: "#EBEBEB",
+
+        primary: "#6457A6",
+        secondary: "#7D7ABC",
+        accent: "#2AF5FF",
       },
-      animation: {
-        float: "float 4s infinite ease-in-out",
-      },
-      keyframes: {
-        float: {
-        "0%, 100%": { transform: "translateY(0)" },
-        "50%": { transform: "translateY(-5%)" }
-        }
-      }
     },
   },
   plugins: [],
