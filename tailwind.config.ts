@@ -6,13 +6,17 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'selector',
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
-        navbar: "var(--navbarcolor)",
+        background_dark: "#555",
+
+        navbar: "rgba(110, 110, 110, 0.5)",
+        navbar_dark: "rgba(40, 0, 71, 0.5)",
 
         text: "#1F1F1F",
         text_secondary: "#EBEBEB",

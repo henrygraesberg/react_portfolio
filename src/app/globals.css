@@ -4,22 +4,13 @@
 
 :root {
   --background: #F7F6F6;
-  --foreground: #000;
-  --navbarcolor: rgba(110, 110, 110, 0.5);
+  --foreground: #1F1F1F;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #555;
-    --foreground: #EBEBEB;
-    --navbarcolor: rgba(40, 0, 71, 0.5);
-  }
 }
 
 @layer utilities {
