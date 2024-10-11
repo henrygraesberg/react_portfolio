@@ -1,13 +1,18 @@
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
-import { useState } from 'react';
+import { useState, FC } from 'react';
 
-const Navbar = () => {
+interface NavbarProps {
+    darkMode: boolean,
+    setDarkMode: Function
+}
+
+const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="flex justify-between text-2xl px-[5%] my-[3%]">
-            <Link href="/" className="flex-1 text-3xl font-bold">Portfolio</Link>
+        <nav className="flex justify-between text-2xl px-[5%] py-[1%] bg-navbar dark:bg-navbar_dark dark:text-text_secondary">
+            <Link href="/" className="flex-1 text-3xl font-bold text-accent">Græsberg</Link>
 
             <div className="flex flex-col items-end">
                 <Icon
@@ -29,10 +34,12 @@ const Navbar = () => {
                     max-md:p-4
                     rounded-md
                     `}>
-                        <Link href="#about">About</Link>
-                        <Link href="#experience">Experience</Link>
-                        <Link href="#projects">Projects</Link>
-                        <Link href="#contact">Contact</Link>
+                        <Link href="#about" className="hover:text-accent">About</Link>
+                        <Link href="#experience" className="hover:text-accent">Experience</Link>
+                        <Link href="#projects" className="hover:text-accent">Projects</Link>
+                        <Link href="#contact" className="hover:text-accent">Contact</Link>
+                        <Link href="https://github.com/henrygraesberg" target='_blank'><Icon icon="jam:github" className="text-3xl hover:text-accent" /></Link>
+                        <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent" onClick={() => setDarkMode(!darkMode)} />
                 </div>
             </div>
         </nav>
