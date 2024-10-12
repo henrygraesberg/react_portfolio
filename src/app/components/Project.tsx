@@ -36,13 +36,13 @@ const GithubButton: FC<ButtonProps> = ({ text="GitHub", url, className }) => {
 
 const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className }) => {
   return (
-    <div className={`w-[40rem] h-[24rem] text-text_secondary grid grid-cols-5 grid-rows-6 gap-4 overflow-hidden rounded-lg border-2 border-accent ${className}`}>
-        <div className="object-cover col-start-1 col-end-6">
-            <Image src={image} alt={`Screenshot of ${title}`} />
+    <div className={`w-[40rem] h-[24rem] text-text_secondary grid grid-cols-5 grid-rows-6 gap-4 overflow-hidden rounded-lg border-2 border-accent bg-black ${className} hover:scale-110 transition-all duration-500`}>
+        <div className="col-start-1 col-end-6">
+            <Image src={image} alt={`Screenshot of ${title}`} className="opacity-50" />
         </div>
-        <h1 className="ml-4 text-3xl row-start-3 col-span-3">{title}</h1>
-        <LinkButton text={urlShorthand} url={url} className="row-start-4 col-span-2 ml-4" />
-        <GithubButton url={github} className="row-start-5 col-span-2 ml-4" />
+        <h1 className="ml-4 text-3xl row-start-3 col-span-3 z-10">{title}</h1>
+        <LinkButton text={urlShorthand} url={url} className="row-start-4 col-span-2 ml-4 z-10" />
+        <GithubButton url={github} className="row-start-5 col-span-2 ml-4 z-10" />
     </div>
   )
 }
