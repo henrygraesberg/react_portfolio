@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { useState, FC } from 'react';
 
 interface NavbarProps {
-    darkMode: boolean,
+    darkMode: boolean
     setDarkMode: Function
 }
 
@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="flex justify-between text-2xl px-[5%] py-[1%] bg-navbar dark:bg-navbar_dark dark:text-text_secondary">
+        <nav className={`flex justify-between text-2xl w-[100vw] px-[5%] py-[1%] bg-navbar dark:bg-navbar_dark dark:text-text_secondary fixed ${darkMode && "dark"}`}>
             <Link href="/" className="flex-1 text-3xl font-bold text-accent">Græsberg</Link>
 
             <div className="flex flex-col items-end">
