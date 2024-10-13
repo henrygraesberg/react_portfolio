@@ -29,12 +29,7 @@ const Home = () => {
         projects.map((project, index) => (
           <Project 
           key={index}
-          title={project.title} 
-          url={project.url} 
-          urlShorthand={project.urlShorthand} 
-          github={project.github} 
-          image={project.image} 
-          technologies={project.technologies} 
+          {...project}
           />
         ))
       }
