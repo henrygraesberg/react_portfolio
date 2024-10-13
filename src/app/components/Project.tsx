@@ -22,7 +22,7 @@ interface ButtonProps {
 
 const LinkButton: FC<ButtonProps> = ({ text, url, className }) => {
     return (
-        <Link href={url} className={`w-[100%] rounded-md p-5 bg-primary grid place-content-center ${className}`}>
+        <Link href={url} target="_blank" className={`w-[100%] rounded-md p-5 bg-primary grid place-content-center ${className}`}>
         {text}
         </Link>
     )
@@ -30,7 +30,7 @@ const LinkButton: FC<ButtonProps> = ({ text, url, className }) => {
 
 const GithubButton: FC<ButtonProps> = ({ text="GitHub", url, className }) => {
     return (
-        <Link href={url} className={`w-[100%] rounded-md p-5 bg-secondary grid place-content-center ${className}`}>
+        <Link href={url} target="_blank" className={`w-[100%] rounded-md p-5 bg-secondary grid place-content-center ${className}`}>
         {text}
         </Link>
     )
@@ -50,11 +50,11 @@ const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, cl
         <h2 className="text-sideways col-start-5 row-start-3 row-span-2 z-10">Made with</h2>
 
         <div className="row-start-3 col-start-4 row-span-4 flex flex-col gap-3 justify-start items-end">
-                    {
-                        technologies?.map((tech) => (
-                            <Icon key={tech} icon={tech} className="text-4xl z-10" />
-                        ))
-                    }
+            {
+                technologies?.map((tech) => (
+                    <Icon key={tech} icon={tech} className="text-4xl z-10" />
+                ))
+            }
         </div>
     </div>
   )
