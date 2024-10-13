@@ -18,3 +18,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-sideways {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+

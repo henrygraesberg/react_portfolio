@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
 
-import portfolioScreenshot from './assets/Screenshot 2024-10-11 at 01.38.33.png';
+import { projects } from '@/app/data/projectData';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,20 +24,20 @@ const Home = () => {
   return (
     <>
     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-    <main className={`bg-background dark:bg-background_dark grid grid-cols-2 p-3 py-24 ${darkMode ? "dark" : ""}`}>
-      <Project 
-      title={'Portfolio'} 
-      url={'https://google.com'} 
-      urlShorthand={'google.com'} 
-      github={'https://github.com/henrygraesberg/react_portfolio'} 
-      image={portfolioScreenshot} />
-      <Project 
-      title={'Portfolio'} 
-      url={'https://google.com'} 
-      urlShorthand={'google.com'} 
-      github={'https://github.com/henrygraesberg/react_portfolio'} 
-      image={portfolioScreenshot}
-      className="" />
+    <main className={`bg-background dark:bg-background_dark grid grid-cols-2 p-3 py-24 -z-30 ${darkMode && "dark"} transition-colors duration-700`}>
+      {
+        projects.map((project, index) => (
+          <Project 
+          key={index}
+          title={project.title} 
+          url={project.url} 
+          urlShorthand={project.urlShorthand} 
+          github={project.github} 
+          image={project.image} 
+          technologies={project.technologies} 
+          />
+        ))
+      }
     </main>
     </>
   );
