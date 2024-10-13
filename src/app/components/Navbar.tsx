@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { useState, FC } from 'react';
 
 interface NavbarProps {
-    darkMode: boolean,
+    darkMode: boolean
     setDarkMode: Function
 }
 
@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="flex justify-between text-2xl px-[5%] py-[1%] bg-navbar dark:bg-navbar_dark dark:text-text_secondary">
+        <nav className={`flex justify-between text-2xl w-[100vw] px-[5%] py-[1%] bg-navbar dark:bg-navbar_dark dark:text-text_secondary fixed ${darkMode && "dark"} transition-colors hover:duration-300`}>
             <Link href="/" className="flex-1 text-3xl font-bold text-accent">Græsberg</Link>
 
             <div className="flex flex-col items-end">
@@ -34,12 +34,12 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                     max-md:p-4
                     rounded-md
                     `}>
-                        <Link href="#about" className="hover:text-accent">About</Link>
-                        <Link href="#experience" className="hover:text-accent">Experience</Link>
-                        <Link href="#projects" className="hover:text-accent">Projects</Link>
-                        <Link href="#contact" className="hover:text-accent">Contact</Link>
-                        <Link href="https://github.com/henrygraesberg" target='_blank'><Icon icon="jam:github" className="text-3xl hover:text-accent" /></Link>
-                        <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent" onClick={() => setDarkMode(!darkMode)} />
+                        <Link href="#about" className="hover:text-accent transition-colors duration-200">About</Link>
+                        <Link href="#experience" className="hover:text-accent transition-colors duration-200">Experience</Link>
+                        <Link href="#projects" className="hover:text-accent transition-colors duration-200">Projects</Link>
+                        <Link href="#contact" className="hover:text-accent transition-colors duration-200">Contact</Link>
+                        <Link href="https://github.com/henrygraesberg" target='_blank'><Icon icon="jam:github" className="text-3xl hover:text-accent transition-colors duration-200" /></Link>
+                        <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200" onClick={() => setDarkMode(!darkMode)} />
                 </div>
             </div>
         </nav>
