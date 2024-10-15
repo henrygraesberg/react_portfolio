@@ -10,7 +10,7 @@ export interface ProjectProps {
     urlShorthand: string
     github: string
     image: StaticImageData
-    technologies?: string[]
+    technologies: string[]
     className?: string
 }
 
@@ -51,7 +51,7 @@ const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, cl
 
         <div className="row-start-3 col-start-4 row-span-4 flex flex-col gap-3 justify-start items-end">
             {
-                technologies?.map((tech) => (
+                technologies.map((tech) => (
                     <Icon key={tech} icon={tech} className="text-4xl z-10" />
                 ))
             }
