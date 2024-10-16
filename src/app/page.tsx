@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
 
-import { projects } from '@/app/data/projectData';
+import { projects } from '@/app/data/ProjectData';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
