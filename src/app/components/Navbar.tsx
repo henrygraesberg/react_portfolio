@@ -4,7 +4,7 @@ import { useState, FC } from 'react';
 
 interface NavbarProps {
     darkMode: boolean
-    setDarkMode: Function
+    setDarkMode: (darkMode: boolean) => void
 }
 
 const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
