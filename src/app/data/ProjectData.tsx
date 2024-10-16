@@ -10,7 +10,8 @@ export const projects: ProjectProps[] = [
         urlShorthand: "google.com",
         github: "https://github.com/henrygraesberg/react_portfolio",
         image: PortfolioImage,
-        technologies: ["logos:nextjs-icon", "logos:react", "logos:typescript-icon", "devicon:tailwindcss"]
+        technologies: ["logos:nextjs-icon", "logos:react", "logos:typescript-icon", "devicon:tailwindcss"],
+        deployment: ["simple-icons:githubpages"]
     },
     {
         title: "Vanilla Portfolio",
@@ -18,6 +19,7 @@ export const projects: ProjectProps[] = [
         urlShorthand: "henrygraesberg.github.io",
         github: "https://github.com/henrygraesberg/Portfolio",
         image: OldPortfolioImage,
-        technologies: ["logos:html-5", "logos:css-3", "logos:javascript"]
+        technologies: ["logos:html-5", "logos:css-3", "logos:javascript"],
+        deployment: ["logos:microsoft-azure"]
     }
 ]
