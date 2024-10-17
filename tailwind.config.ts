@@ -25,6 +25,10 @@ const config: Config = {
         secondary: "#7D7ABC",
         accent: "#2AF5FF",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        ultra: ["Ultra", "sans-serif"],
+      }
     },
   },
   plugins: [],
