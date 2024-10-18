@@ -6,8 +6,8 @@ import Project from './components/Project';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 
-import { projects } from '@/app/data/ProjectData';
-import { skills } from '@/app/data/SkillsData';
+import { projects } from '@/data/ProjectData';
+import { skills } from '@/data/SkillsData';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,7 +17,7 @@ const Home = () => {
           "(prefers-color-scheme: dark)"
         );
       
-        if (colorSchemeDark.matches) {
+        if(colorSchemeDark.matches) {
           setDarkMode(true);
         }
 
@@ -35,14 +35,14 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="#about" className="flex flex-col p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl">
+    <div id="about" className="flex flex-col p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl">
       <div>
         <h2 className="text-5xl font-ultra text-accent">Skills</h2>
         <Skills frontend={skills.frontend} backend={skills.backend} other={skills.other} />
       </div>
     </div>
 
-    <div id="#projects">
+    <div id="projects">
       {
         projects.map((project, index) => (
           <Project 

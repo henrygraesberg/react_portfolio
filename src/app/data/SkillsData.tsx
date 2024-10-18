@@ -1,4 +1,4 @@
-import { SkillsProps } from "../components/Skills"
+import { SkillsProps } from "@/components/Skills"
 
 export const skills: SkillsProps = {
     frontend: [
