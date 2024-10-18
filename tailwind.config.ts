@@ -15,8 +15,8 @@ const config: Config = {
 
         background_dark: "#555",
 
-        navbar: "rgba(110, 110, 110, 0.5)",
-        navbar_dark: "rgba(40, 0, 71, 0.5)",
+        navbar: "rgb(110, 110, 110)",
+        navbar_dark: "rgb(40, 0, 71)",
 
         text: "#1F1F1F",
         text_secondary: "#EBEBEB",
