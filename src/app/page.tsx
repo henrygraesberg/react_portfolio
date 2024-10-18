@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-    <main className={`bg-background dark:bg-background_dark grid place-content-center -z-30 ${darkMode && "dark"} transition-colors duration-700`}>
+    <main className={`flex flex-col gap-14 bg-background dark:bg-background_dark place-content-center -z-30 ${darkMode && "dark"} transition-colors duration-700`}>
     <div className="h-[100vh] w-[100vw] px-[5vw] flex flex-col justify-center hero">
       <div className="font-ultra z-10">
         <h3 className="text-3xl text-secondary">Hello world, I&apos;m</h3>
@@ -35,12 +35,19 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="about" className="flex flex-col p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl">
+    <div id="about" className="flex flex-col gap-7 p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl transition-colors duration-700">
+      <div>
+        <h2 className="text-5xl font-ultra text-accent">About</h2>
+        <p className="text-3xl font-medium">
+          I&apos;m a computer science student at the Norwegian University of Science and Technology.<br />
+          With experience in game development and web development, I use my experience and spare time to work on fun projects!
+          </p>
+      </div>
       <div>
         <h2 className="text-5xl font-ultra text-accent">Skills</h2>
-        <Skills frontend={skills.frontend} backend={skills.backend} other={skills.other} />
+        <Skills {...skills} />
       </div>
-    </div>
+    </div> 
 
     <div id="projects">
       {

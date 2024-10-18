@@ -18,7 +18,7 @@ export interface SkillsProps {
 
 const Skills: FC<SkillsProps> = ({ frontend, backend, other }) => {
   return (
-    <div className="flex">
+    <div className="flex max-md:flex-col">
         <div className="flex flex-col gap-4 flex-1">
             <h3 className="text-4xl text-center text-secondary font-ultra">Frontend</h3>
             <div className="flex flex-col gap-4">
