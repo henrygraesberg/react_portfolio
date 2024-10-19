@@ -53,10 +53,12 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="experience" className="grid px-[5vw]">
+    <div id="experience" className="grid md:grid-cols-2 gap-7 px-[5vw]">
       <h2 className="md:col-span-2 text-5xl font-ultra text-center text-primary dark:text-accent transition-all duration-700">Experience</h2>
 
-      <div>
+      <div className="flex flex-col gap-4">
+        <h3 className="font-bold text-2xl dark:text-text_secondary transition-all duration-700">Education</h3>
+
         {
         EducationData.map((education, index) => (
           <EducationCard 
@@ -66,7 +68,10 @@ const Home = () => {
         ))
         }
       </div>
-      <div>
+
+      <div className="flex flex-col gap-4">
+        <h3 className="font-bold md:text-end text-2xl dark:text-text_secondary transition-all duration-700">Work Experience</h3>
+
         {
         WorkExperienceData.map((workExperience, index) => (
           <WorkExperienceCard 
