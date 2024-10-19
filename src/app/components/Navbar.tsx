@@ -12,7 +12,7 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
 
     return (
         <nav className={`flex justify-between text-2xl w-[100vw] px-[5vw] py-[1%] bg-navbar dark:bg-navbar_dark dark:bg-opacity-50 bg-opacity-50 dark:text-text_secondary fixed z-50 ${darkMode && "dark"} transition-colors hover:duration-300`}>
-            <Link href="/" className="flex-1 text-3xl font-ultra text-accent">Græsberg</Link>
+            <Link href="/" className="text-3xl font-ultra text-accent">Græsberg</Link>
 
             <div className="flex flex-col items-end">
                 <Icon
@@ -34,10 +34,10 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                     max-md:p-4
                     rounded-md
                     `}>
-                        <Link href="#about" className="hover:text-accent transition-colors duration-200">About</Link>
-                        <Link href="#experience" className="hover:text-accent transition-colors duration-200">Experience</Link>
-                        <Link href="#projects" className="hover:text-accent transition-colors duration-200">Projects</Link>
-                        <Link href="#contact" className="hover:text-accent transition-colors duration-200">Contact</Link>
+                        <Link href="#about" className="hover:text-accent transition-colors hover:duration-200">About</Link>
+                        <Link href="#experience" className="hover:text-accent transition-colors hover:duration-200">Experience</Link>
+                        <Link href="#projects" className="hover:text-accent transition-colors hover:duration-200">Projects</Link>
+                        <Link href="#contact" className="hover:text-accent transition-colors hover:duration-200">Contact</Link>
                         <Link href="https://github.com/henrygraesberg" target='_blank'><Icon icon="jam:github" className="text-3xl hover:text-accent transition-colors duration-200" /></Link>
                         <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200" onClick={() => setDarkMode(!darkMode)} />
                 </div>
