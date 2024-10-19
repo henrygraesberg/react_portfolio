@@ -1,13 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Project from './components/Project';
-import Footer from './components/Footer';
-import Skills from './components/Skills';
+import Navbar from '@/components/Navbar';
+import Project from '@/components/Project';
+import Footer from '@/components/Footer';
+import Skills from '@/components/Skills';
+import EducationCard from "@/components/experience/Education";
+import WorkExperienceCard from '@/components/experience/WorkExperience';
 
 import { projects } from '@/data/ProjectData';
 import { skills } from '@/data/SkillsData';
+import { EducationData } from '@/data/EducationData';
+import { WorkExperienceData } from '@/data/WorkExperienceData';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +51,32 @@ const Home = () => {
         <h2 className="text-5xl font-ultra text-accent">Skills</h2>
         <Skills {...skills} />
       </div>
-    </div> 
+    </div>
+
+    <div id="experience" className="grid px-[5vw]">
+      <h2 className="md:col-span-2 text-5xl font-ultra text-center text-primary dark:text-accent transition-all duration-700">Experience</h2>
+
+      <div>
+        {
+        EducationData.map((education, index) => (
+          <EducationCard 
+          key={index}
+          {...education}
+          />
+        ))
+        }
+      </div>
+      <div>
+        {
+        WorkExperienceData.map((workExperience, index) => (
+          <WorkExperienceCard 
+          key={index}
+          {...workExperience}
+          />
+        ))
+        }
+      </div>
+    </div>
 
     <div id="projects">
       {
