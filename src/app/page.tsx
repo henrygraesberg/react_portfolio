@@ -83,7 +83,8 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="projects">
+    <div id="projects" className="flex flex-col gap-10 items-center bg-background_color m-[2.5vw] p-[2.5vw] rounded-xl">
+      <h2 className="text-5xl font-ultra text-accent">Projects</h2>
       {
         projects.map((project, index) => (
           <Project 

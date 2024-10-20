@@ -6,8 +6,8 @@ import OldPortfolioImage from "@/assets/old_Portfolio.png";
 export const projects: ProjectProps[] = [
     {
         title: "Portfolio",
-        url: "https://google.com",
-        urlShorthand: "google.com",
+        url: "https://grasberg.no",
+        urlShorthand: "grasberg.no",
         github: "https://github.com/henrygraesberg/react_portfolio",
         image: PortfolioImage,
         technologies: ["logos:nextjs-icon", "logos:react", "logos:typescript-icon", "devicon:tailwindcss"],
