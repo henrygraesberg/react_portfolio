@@ -14,6 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
 
         background_dark: "#555",
+        background_color: "#562990",
 
         navbar: "rgb(110, 110, 110)",
         navbar_dark: "rgb(40, 0, 71)",
