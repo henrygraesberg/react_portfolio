@@ -35,7 +35,7 @@ const Home = () => {
     <div className="h-[100vh] w-[100vw] px-[5vw] flex flex-col justify-center hero">
       <div className="font-ultra z-10">
         <h3 className="text-3xl text-secondary">Hello world, I&apos;m</h3>
-        <h1 className="text-7xl text-accent">Henry<br />Græsberg</h1>
+        <h1 className="text-7xl max-md:text-5xl text-accent">Henry<br />Græsberg</h1>
       </div>
     </div>
 

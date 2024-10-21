@@ -39,7 +39,7 @@ const GithubButton: FC<ButtonProps> = ({ text="GitHub", url, className }) => {
 
 const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => {
   return (
-    <div className={`w-[100%] max-w-[50rem] min-h-[24rem] h-[40vh] text-text_secondary grid grid-cols-[2fr_2fr_3fr_1fr_1fr_1fr_1fr] grid-rows-6 overflow-hidden rounded-lg border-2 border-accent bg-black ${className} hover:scale-110 transition-all duration-500`}>
+    <div className={`w-[100%] max-w-[50rem] aspect-video text-text_secondary grid grid-cols-[2fr_2fr_3fr_1fr_1fr_1fr_1fr] grid-rows-6 overflow-hidden rounded-lg border-2 border-accent bg-black ${className} hover:scale-110 transition-all duration-500`}>
         <div className="col-start-1 col-end-8">
             <Image src={image} alt={`Screenshot of ${title}`} className="opacity-50" />
         </div>
