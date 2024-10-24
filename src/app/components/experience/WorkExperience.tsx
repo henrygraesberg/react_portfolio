@@ -5,7 +5,7 @@ export interface WorkExperienceCardProps {
     title: string
     employer: string
     time_span: string
-    image?: StaticImageData
+    image?: StaticImageData | string
     description?: string[]
 }
 
