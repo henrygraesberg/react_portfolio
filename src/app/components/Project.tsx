@@ -4,13 +4,18 @@ import { StaticImageData } from "next/image"
 import Link from "next/link"
 import { FC } from "react"
 
+interface TechImage {
+    src: StaticImageData | string
+    alt: string
+}
+
 export interface ProjectProps {
     title: string
     url: string
     urlShorthand: string
     github: string
-    image: StaticImageData
-    technologies: string[]
+    image: StaticImageData | string
+    technologies: (string | TechImage)[]
     deployment: string[]
     className?: string
 }
@@ -52,9 +57,10 @@ const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, cl
 
         <div className="row-start-3 col-start-4 row-span-4 flex flex-col gap-3 justify-start items-end">
             {
-                technologies.map((tech) => (
-                    <Icon key={tech} icon={tech} className="text-4xl z-10" />
-                ))
+                technologies.map((tech) => {
+                    if (typeof tech === "string") return (<Icon key={tech} icon={tech} className="text-4xl z-10" />)
+                    else return (<Image key={tech.alt} src={tech.src} alt={tech.alt} height={36} className="z-10" />)
+                })
             }
         </div>
 
