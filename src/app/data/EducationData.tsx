@@ -1,6 +1,6 @@
 import { EducationCardProps } from '@/components/experience/Education';
 
-export const EducationData: EducationCardProps[] = [
+export const Education: EducationCardProps[] = [
     {
         title: "Bachelor in Informatics",
         school: "Norwegian University of Science and Technology",

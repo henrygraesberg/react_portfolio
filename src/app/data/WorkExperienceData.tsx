@@ -3,7 +3,7 @@ import { WorkExperienceCardProps } from "@/components/experience/WorkExperience"
 import dotkomLogo from "@/assets/dotkom.png";
 import jubkomLogo from "@/assets/nodekom.png";
 
-export const WorkExperienceData: WorkExperienceCardProps[] = [
+export const WorkExperience: WorkExperienceCardProps[] = [
     {
         title: "Member of the Systems Development and Administration Committee",
         employer: "Online, Student Association",

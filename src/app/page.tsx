@@ -8,10 +8,10 @@ import Skills from '@/components/Skills';
 import EducationCard from "@/components/experience/Education";
 import WorkExperienceCard from '@/components/experience/WorkExperience';
 
-import { projects } from '@/data/ProjectData';
 import { skills } from '@/data/SkillsData';
-import { EducationData } from '@/data/EducationData';
-import { WorkExperienceData } from '@/data/WorkExperienceData';
+import { Education } from '@/data/EducationData';
+import { WorkExperience } from '@/data/WorkExperienceData';
+import { projects } from '@/data/ProjectData';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -60,7 +60,7 @@ const Home = () => {
         <h3 className="font-bold text-2xl dark:text-text_secondary transition-all duration-700">Education</h3>
 
         {
-        EducationData.map((education, index) => (
+        Education.map((education, index) => (
           <EducationCard 
           key={index}
           {...education}
@@ -73,7 +73,7 @@ const Home = () => {
         <h3 className="font-bold md:text-end text-2xl dark:text-text_secondary transition-all duration-700">Work Experience</h3>
 
         {
-        WorkExperienceData.map((workExperience, index) => (
+        WorkExperience.map((workExperience, index) => (
           <WorkExperienceCard 
           key={index}
           {...workExperience}
