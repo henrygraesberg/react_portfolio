@@ -18,8 +18,8 @@ export interface SkillsProps {
 
 const Skills: FC<SkillsProps> = ({ frontend, backend, other }) => {
   return (
-    <div className="flex max-md:flex-col">
-        <div className="flex flex-col gap-4 flex-1 max-md:items-center">
+    <div className="flex max-md:flex-col max-md:items-center max-md:gap-5 justify-between">
+        <div className="flex flex-col gap-4 flex-1 max-w-96 max-md:items-center">
             <h3 className="text-4xl text-center text-secondary font-ultra">Frontend</h3>
             <div className="flex flex-col gap-4">
                 {frontend.map((skill, index) => (
@@ -31,7 +31,7 @@ const Skills: FC<SkillsProps> = ({ frontend, backend, other }) => {
             </div>
         </div>
 
-        <div className="flex flex-col gap-4 flex-1 max-md:items-center">
+        <div className="flex flex-col gap-4 flex-1 max-w-96 max-md:items-center">
             <h3 className="text-4xl text-center text-secondary font-ultra">Backend</h3>
             <div className="flex flex-col gap-4">
                 {backend.map((skill, index) => (
@@ -43,7 +43,7 @@ const Skills: FC<SkillsProps> = ({ frontend, backend, other }) => {
             </div>
         </div>
 
-        <div className="flex flex-col gap-4 flex-1 max-md:items-center">
+        <div className="flex flex-col gap-4 flex-1 max-w-96 max-md:items-center">
             <h3 className="text-4xl text-center text-secondary font-ultra">Other</h3>
             <div className="flex flex-col gap-4">
                 {other.map((skill, index) => (
