@@ -27,10 +27,11 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                     justify-between
                     gap-4
                     ${!menuOpen && "max-md:hidden"}
+                    max-md:absolute
+                    max-md:top-8
                     max-md:flex-col
                     max-md:bg-gradient-to-b
                     max-md:from-secondary
-                    max-md:to-dark
                     max-md:p-4
                     rounded-md
                     `}>
