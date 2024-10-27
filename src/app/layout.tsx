@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter, Ultra } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -6,18 +7,31 @@ export const metadata: Metadata = {
   description: "The portfolio of Henry Græsberg",
 };
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+const ultra = Ultra({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-ultra",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${ultra.variable}`}>
       <head>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap" rel="stylesheet" />
+
       </head>
 
-      <body>
+      <body className="font-inter">
         {children}
       </body>
     </html>

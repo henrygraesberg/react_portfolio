@@ -27,8 +27,8 @@ const config: Config = {
         accent: "#2AF5FF",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        ultra: ["Ultra", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        ultra: ["var(--font-ultra)", "sans-serif"],
       }
     },
   },
