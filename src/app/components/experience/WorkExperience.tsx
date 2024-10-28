@@ -2,7 +2,7 @@ import { FC } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 export interface WorkExperienceCardProps {
-    title: string
+    title: JSX.Element
     employer: string
     time_span: string
     image?: StaticImageData | string
@@ -14,7 +14,7 @@ const WorkExperienceCard: FC<WorkExperienceCardProps> = ({ title, employer, time
     <div className="flex flex-col p-4 gap-1 rounded-xl bg-primary">
         <div className="flex items-center justify-between">
             {image && <Image src={image} alt={`${employer} logo`} width={70} />}
-            <h3 className="text-xl text-accent text-end flex-1 font-bold m-2">{title}</h3>
+            <h3 className="text-xl text-text text-end flex-1 font-bold m-2">{title}</h3>
         </div>
 
         <p className="text-text_secondary font-bold">{employer}</p>

@@ -6,6 +6,11 @@ const nextConfig = {
                 source: '/:slug',
                 destination: '/',
                 permanent: true
+            },
+            {
+                source: '/:slug/:slug*',
+                destination: '/',
+                permanent: true
             }
         ];
     }

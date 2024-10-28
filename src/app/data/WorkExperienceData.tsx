@@ -5,7 +5,7 @@ import jubkomLogo from "@/assets/nodekom.png";
 
 export const WorkExperience: WorkExperienceCardProps[] = [
     {
-        title: "Member of the Systems Development and Administration Committee",
+        title: <span><span className="text-accent">Member</span> of the Systems Development and Administration Committee</span>,
         employer: "Online, Student Association",
         time_span: "Sep. 2024 - present",
         description: [
@@ -15,7 +15,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         image: dotkomLogo
     },
     {
-        title: "Deputy Head of the Anniversary Committee",
+        title: <span><span className="text-accent">Deputy Head</span> of the Anniversary Committee</span>,
         employer: "Online, Student Association",
         time_span: "Oct. 2024 - present",
         description: [
@@ -25,7 +25,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         image: jubkomLogo
     },
     {
-        title: "Game Development Intern",
+        title: <span>Game Development <span className="text-accent">Intern</span></span>,
         employer: "Innova Interactive Studios Co. Ltd.",
         time_span: "Jul. 2021 - Aug. 2021",
         description: [
