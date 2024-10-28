@@ -7,11 +7,6 @@ const nextConfig = {
                 destination: '/',
                 permanent: true
             },
-            {
-                source: '/:slug/:slug*',
-                destination: '/',
-                permanent: true
-            }
         ];
     }
 };
