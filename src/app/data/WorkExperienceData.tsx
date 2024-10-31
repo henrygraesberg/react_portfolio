@@ -1,7 +1,7 @@
 import { WorkExperienceCardProps } from "@/components/experience/WorkExperience";
 
 import dotkomLogo from "@/assets/dotkom.png";
-import jubkomLogo from "@/assets/nodekom.png";
+//import jubkomLogo from "@/assets/nodekom.png";
 
 export const WorkExperience: WorkExperienceCardProps[] = [
     {
@@ -14,7 +14,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         ],
         image: dotkomLogo
     },
-    {
+    /*{
         title: <span><span className="text-accent">Deputy Head</span> of the Anniversary Committee</span>,
         employer: "Online, Student Association",
         time_span: "Oct. 2024 - present",
@@ -23,7 +23,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
             "Hosted a successful banquet with [TBD] attendees"
         ],
         image: jubkomLogo
-    },
+    },*/
     {
         title: <span>Game Development <span className="text-accent">Intern</span></span>,
         employer: "Innova Interactive Studios Co. Ltd.",
