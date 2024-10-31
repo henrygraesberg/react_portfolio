@@ -6,7 +6,7 @@ import OldPortfolioImage from "@/assets/old_Portfolio.png";
 export const projects: ProjectProps[] = [
     {
         title: "Portfolio",
-        url: "https://grasberg.no",
+        url: "https://www.grasberg.no",
         urlShorthand: "grasberg.no",
         github: "https://github.com/henrygraesberg/react_portfolio",
         image: PortfolioImage,
