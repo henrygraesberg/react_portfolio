@@ -11,7 +11,7 @@ export const projects: ProjectProps[] = [
         github: "https://github.com/henrygraesberg/react_portfolio",
         image: PortfolioImage,
         technologies: ["logos:nextjs-icon", "logos:react", "logos:typescript-icon", "devicon:tailwindcss"],
-        deployment: ["logos:microsoft-azure"]
+        deployment: ["skill-icons:vercel-dark"]
     },
     {
         title: "Vanilla Portfolio",
