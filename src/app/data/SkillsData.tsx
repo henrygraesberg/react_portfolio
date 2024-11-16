@@ -31,6 +31,14 @@ export const skills: SkillsProps = {
         {
             name: "Azure",
             icon: "devicon-plain:azure"
+        },
+        {
+            name: "Cloudflare",
+            icon: "simple-icons:cloudflare"
+        },
+        {
+            name: "Vercel",
+            icon: "simple-icons:vercel"
         }
     ],
     other: [
