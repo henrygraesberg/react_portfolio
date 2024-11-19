@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Ultra } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
 
       <body className="font-inter">
         {children}
+        <Analytics />
       </body>
     </html>
   );
