@@ -29,6 +29,16 @@ export const skills: SkillsProps = {
             icon: "file-icons:nextjs"
         },
         {
+            name: "Supabase",
+            icon: "simple-icons:supabase"
+        },
+        {
+            name: "PocketBase",
+            icon: "simple-icons:pocketbase"
+        }
+    ],
+    infra: [
+        {
             name: "Azure",
             icon: "devicon-plain:azure"
         },
@@ -39,7 +49,7 @@ export const skills: SkillsProps = {
         {
             name: "Vercel",
             icon: "simple-icons:vercel"
-        }
+        },
     ],
     other: [
         {
@@ -61,6 +71,6 @@ export const skills: SkillsProps = {
         {
             name: "Figma",
             icon: "file-icons:figma"
-        }
+        },
     ]
 }
