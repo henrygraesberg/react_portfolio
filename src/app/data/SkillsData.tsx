@@ -28,6 +28,14 @@ export const skills: SkillsProps = {
             name: "Next.js",
             icon: "file-icons:nextjs"
         },
+        {
+            name: "Supabase",
+            icon: "simple-icons:supabase"
+        },
+        {
+            name: "PocketBase",
+            icon: "simple-icons:pocketbase"
+        }
     ],
     infra: [
         {
