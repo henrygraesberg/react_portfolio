@@ -42,8 +42,7 @@ const GithubButton: FC<ButtonProps> = ({ text="GitHub", url, className }) => {
     )
 }
 
-const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => {
-  return (
+const LargeScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => (
     <div className={`w-[100%] max-w-[50rem] aspect-video text-text_secondary grid grid-cols-[2fr_2fr_3fr_1fr_1fr_1fr_1fr] grid-rows-6 overflow-hidden rounded-lg border-2 border-accent bg-black ${className} hover:scale-110 transition-all duration-500`}>
         <div className="col-start-1 col-end-8">
             <Image src={image} alt={`Screenshot of ${title}`} className="opacity-50" />
@@ -74,7 +73,45 @@ const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, cl
             }
         </div>
     </div>
-  )
-}
+)
+
+const SmallScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => (
+    <div className={`flex gap-4 flex-col ${className}`}>
+        <h3 className="text-3xl text-text_secondary">{title}</h3>
+        <Image src={image} alt={`Screenshot of ${title}`} className="w-full rounded-2xl aspect-video" />
+
+        <div className="flex flex-wrap gap-4">
+            <LinkButton text={urlShorthand} url={url} className="bg-accent" />
+            <GithubButton url={github} className="bg-navbar_dark text-text_secondary" />
+        </div>
+
+        <div className="flex gap-4">
+            <div className="flex flex-col max-w-[50%] flex-1">
+                <h4 className="text-2xl text-text_secondary">Made with</h4>
+                <div className="flex gap-4">
+                {technologies.map((tech) => {
+                    if (typeof tech === "string") return (<Icon key={tech} icon={tech} className="text-4xl z-10" />)
+                    else return (<Image key={tech.alt} src={tech.src} alt={tech.alt} height={36} className="z-10" />)
+                })}
+                </div>
+            </div>
+            <div className="flex flex-col">
+                <h4 className="text-2xl text-text_secondary">Deployed on</h4>
+                <div className="flex gap-4 justify-end">
+                {deployment.map((tech) => (
+                    <Icon key={tech} icon={tech} className="text-4xl z-10" />
+                ))}
+                </div>
+            </div>
+        </div>
+    </div>
+)
+
+const Project: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => (
+    <>
+        <LargeScreenProject title={title} url={url} urlShorthand={urlShorthand} github={github} image={image} className={`${className} max-md:hidden`} technologies={technologies} deployment={deployment} />
+        <SmallScreenProject title={title} url={url} urlShorthand={urlShorthand} github={github} image={image} className={`${className} md:hidden`} technologies={technologies} deployment={deployment} />
+    </>
+)
 
 export default Project
