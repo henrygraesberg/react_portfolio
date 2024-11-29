@@ -15,11 +15,15 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
             <Link href="/" className="text-3xl font-ultra text-accent">Græsberg</Link>
 
             <div className="flex flex-col items-end">
+                <div className="flex gap-5 items-center">
+                <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200 md:hidden" onClick={() => setDarkMode(!darkMode)} />
+
                 <Icon
                     onClick={() => setMenuOpen(!menuOpen)}
                     icon={ `${menuOpen ? "pajamas:close" : "charm:menu-hamburger"}` }
                     className="md:hidden"
                 />
+                </div>
             
                 <div className={`
                     flex
@@ -28,10 +32,11 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                     gap-4
                     ${!menuOpen && "max-md:hidden"}
                     max-md:absolute
-                    max-md:top-8
+                    max-md:top-12
                     max-md:flex-col
                     max-md:bg-gradient-to-b
                     max-md:from-secondary
+                    max-md:to-primary
                     max-md:p-4
                     rounded-md
                     `}>
@@ -39,7 +44,7 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                         <Link href="#experience" className="hover:text-accent transition-colors hover:duration-200">Experience</Link>
                         <Link href="#projects" className="hover:text-accent transition-colors hover:duration-200">Projects</Link>
                         <Link href="#contact" className="hover:text-accent transition-colors hover:duration-200">Contact</Link>
-                        <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200" onClick={() => setDarkMode(!darkMode)} />
+                        <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200 max-md:hidden" onClick={() => setDarkMode(!darkMode)} />
                 </div>
             </div>
         </nav>
