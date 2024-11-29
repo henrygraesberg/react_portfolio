@@ -76,7 +76,7 @@ const LargeScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github
 )
 
 const SmallScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => (
-    <div className={`flex gap-4 flex-col rounded-2xl p-5 border-2 border-accent bg-slate-900 bg-opacity-50 ${className}`}>
+    <div className={`flex gap-4 flex-col w-full rounded-2xl p-5 border-2 border-accent bg-slate-900 bg-opacity-50 ${className}`}>
         <h3 className="text-3xl text-text_secondary">{title}</h3>
         <Image src={image} alt={`Screenshot of ${title}`} className="w-full rounded-2xl aspect-video" />
 
