@@ -76,16 +76,16 @@ const LargeScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github
 )
 
 const SmallScreenProject: FC<ProjectProps> = ({ title, url, urlShorthand, github, image, className, technologies, deployment }) => (
-    <div className={`flex gap-4 flex-col ${className}`}>
+    <div className={`flex gap-4 flex-col rounded-2xl p-5 border-2 border-accent bg-slate-900 bg-opacity-50 ${className}`}>
         <h3 className="text-3xl text-text_secondary">{title}</h3>
         <Image src={image} alt={`Screenshot of ${title}`} className="w-full rounded-2xl aspect-video" />
 
         <div className="flex flex-wrap gap-4">
-            <LinkButton text={urlShorthand} url={url} className="bg-accent" />
-            <GithubButton url={github} className="bg-navbar_dark text-text_secondary" />
+            <LinkButton text={urlShorthand} url={url} className="text-text_secondary" />
+            <GithubButton url={github} className="text-text_secondary" />
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-between">
             <div className="flex flex-col max-w-[50%] flex-1">
                 <h4 className="text-2xl text-text_secondary">Made with</h4>
                 <div className="flex gap-4">
