@@ -26,6 +26,7 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                 </div>
             
                 <div className={`
+                    max-md:text-text
                     flex
                     flex-1
                     justify-between
@@ -37,6 +38,8 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                     max-md:bg-gradient-to-b
                     max-md:from-secondary
                     max-md:to-primary
+                    max-md:border-2
+                    max-md:border-navbar_dark
                     max-md:p-4
                     rounded-md
                     `}>
