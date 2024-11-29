@@ -21,6 +21,7 @@ const config: Config = {
 
         text: "#1F1F1F",
         text_secondary: "#EBEBEB",
+        text_purple: "#6A01C0",
 
         primary: "#6457A6",
         secondary: "#7D7ABC",

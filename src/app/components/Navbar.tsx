@@ -39,7 +39,6 @@ const Navbar: FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
                         <Link href="#experience" className="hover:text-accent transition-colors hover:duration-200">Experience</Link>
                         <Link href="#projects" className="hover:text-accent transition-colors hover:duration-200">Projects</Link>
                         <Link href="#contact" className="hover:text-accent transition-colors hover:duration-200">Contact</Link>
-                        <Link href="https://github.com/henrygraesberg" target='_blank'><Icon icon="jam:github" className="text-3xl hover:text-accent transition-colors duration-200" /></Link>
                         <Icon icon={darkMode ? "mingcute:sun-fill" : "mingcute:moon-fill"} className="text-3xl hover:text-accent transition-colors duration-200" onClick={() => setDarkMode(!darkMode)} />
                 </div>
             </div>

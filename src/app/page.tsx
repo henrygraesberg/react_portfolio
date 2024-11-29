@@ -39,7 +39,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="about" className="flex flex-col gap-7 p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl transition-colors duration-700">
+    <div id="about" className="flex flex-col gap-7 p-[2.5vw] mx-[2.5vw] bg-background_dark dark:bg-text text-text_secondary rounded-3xl scroll-m-20 transition-colors duration-700">
       <div>
         <h2 className="text-5xl font-ultra text-accent">About</h2>
         <p className="text-3xl font-medium">
@@ -53,7 +53,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="experience" className="grid md:grid-cols-2 gap-7 px-[5vw]">
+    <div id="experience" className="grid md:grid-cols-2 gap-7 px-[5vw] scroll-m-20">
       <h2 className="md:col-span-2 text-5xl font-ultra text-center text-primary dark:text-accent transition-all duration-700">Experience</h2>
 
       <div className="flex flex-col gap-4">
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div id="projects" className="flex flex-col gap-10 items-center bg-background_color m-[2.5vw] p-[2.5vw] rounded-xl">
+    <div id="projects" className="flex flex-col gap-10 items-center bg-background_color m-[2.5vw] p-[2.5vw] rounded-xl scroll-m-20">
       <h2 className="text-5xl font-ultra text-accent">Projects</h2>
       {
         projects.map((project, index) => (
