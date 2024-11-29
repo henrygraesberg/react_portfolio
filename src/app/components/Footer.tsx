@@ -31,15 +31,15 @@ const SocialElement: FC<SocialElementProps> = ({ title, serviceLogo, link }) => 
 
 const Footer = () => {
   return (
-    <footer id="contact" className={`flex justify-between items-center px-[5vw] py-3 bg-navbar dark:bg-navbar_dark dark:text-text_secondary transition-colors duration-700`}>
-        <h2 className="text-2xl font-ultra">Contact<br />& Socials</h2>
+    <footer id="contact" className={`flex max-md:flex-col gap-5 justify-between items-center px-[5vw] py-3 bg-navbar dark:bg-navbar_dark dark:text-text_secondary transition-colors duration-700`}>
+        <h2 className="text-2xl font-ultra max-md:text-center">Contact<br />& Socials</h2>
 
         <div className="flex gap-4 flex-col">
             <SocialElement title="GitHub" serviceLogo="jam:github" link="https://git.graesberg.com" />
             <SocialElement title="LinkedIn" serviceLogo="uil:linkedin" link="https://linkedin.com/in/henry-graesberg" />
         </div>
 
-        <div className="flex gap-4 flex-col text-end">
+        <div className="flex gap-4 flex-col max-md:text-center text-end">
             <ContactElement title="Email" type="mailto" content="henry@graesberg.com" />
             <ContactElement title="Phone" type="tel" content="+47 416 29 153" />
         </div>
