@@ -3,6 +3,9 @@
 import { useState, useEffect } from "react"
 
 const useLocalStorageState = <T>(key: string, defaultValue: T) => {
+  if (typeof window === "undefined") {
+    return useState(defaultValue)
+  }
   const [state, setState] = useState(() => {
     const valueInLocalStorage = window.localStorage.getItem(key)
     if (valueInLocalStorage) {

@@ -41,7 +41,6 @@ const NotCookiesModal = () => {
     <p className="font-bold text-center">Actually don&apos;t show again (Uses local storage, still no cookies)</p>
     <div className="flex gap-4 max-md:flex-col">
       <div className="flex flex-col justify-between">
-        Yes
         <input type="checkbox" checked={permanenetHideCheckbox} onChange={e => setPermanentHideCheckbox(e.target.checked)} />
       </div>
     </div>
