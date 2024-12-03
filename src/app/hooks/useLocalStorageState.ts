@@ -3,11 +3,15 @@
 import { useState, useEffect } from "react"
 
 const useLocalStorageState = <T>(key: string, defaultValue: T) => {
-  if (typeof window === "undefined") {
-    return useState(defaultValue)
-  }
   const [state, setState] = useState(() => {
-    const valueInLocalStorage = window.localStorage.getItem(key)
+    let valueInLocalStorage
+    
+    if(typeof window !== "undefined") {
+      valueInLocalStorage = window.localStorage.getItem(key)
+    } else {
+      valueInLocalStorage = null
+    }
+
     if (valueInLocalStorage) {
       return JSON.parse(valueInLocalStorage) as T
     }
@@ -15,7 +19,9 @@ const useLocalStorageState = <T>(key: string, defaultValue: T) => {
   })
 
   useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(state))
+    if (typeof window !== "undefined") { 
+      window.localStorage.setItem(key, JSON.stringify(state))
+    }
   }, [key, state])
 
   return [state, setState] as const
