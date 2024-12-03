@@ -58,7 +58,6 @@ const Home = () => {
 
       <div className="flex flex-col gap-4">
         <h3 className="font-bold text-2xl dark:text-text_secondary transition-all duration-700">Education</h3>
-
         {
         Education.map((education, index) => (
           <EducationCard 
@@ -71,7 +70,6 @@ const Home = () => {
 
       <div className="flex flex-col gap-4">
         <h3 className="font-bold md:text-end text-2xl dark:text-text_secondary transition-all duration-700">Work Experience</h3>
-
         {
         WorkExperience.map((workExperience, index) => (
           <WorkExperienceCard 

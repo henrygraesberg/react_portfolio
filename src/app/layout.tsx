@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Ultra } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import NotCookiesModal from "./components/NotCookiesModal";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
       </head>
 
       <body className="font-inter">
+        <NotCookiesModal />
         {children}
         <Analytics />
       </body>
