@@ -29,6 +29,14 @@ export const skills: SkillsProps = {
             icon: "file-icons:nextjs"
         },
         {
+            name: "Node.js",
+            icon: "lineicons:nodejs"
+        },
+        {
+            name: "Express",
+            icon: "simple-icons:express"
+        },
+        {
             name: "Supabase",
             icon: "simple-icons:supabase"
         },
