@@ -17,7 +17,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
     },
     /*{
         title: <span>Student <span className="text-accent">Intern</span></span>,
-        employer: "SLB",
+        employer: "SLB Norway Technology Center",
         time_span: "jun. 2025 - aug. 2025",
         description: [
             
