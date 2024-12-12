@@ -33,6 +33,10 @@ export const skills: SkillsProps = {
             icon: "lineicons:nodejs"
         },
         {
+            name: "Deno",
+            icon: "logos:deno"
+        },
+        {
             name: "Express.js",
             icon: "simple-icons:express"
         },
