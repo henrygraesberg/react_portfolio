@@ -29,7 +29,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         employer: "Online, Student Association",
         time_span: "Oct. 2024 - present",
         description: [
-            "Led a team of [TBD] in the planning of a week-long event",
+            "Led a team of 10 people in the planning of a week-long event",
             "Hosted a successful banquet with [TBD] attendees"
         ],
         image: nodeLogo
