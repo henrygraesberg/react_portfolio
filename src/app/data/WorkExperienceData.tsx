@@ -1,6 +1,7 @@
 import { WorkExperienceCardProps } from "@/components/experience/WorkExperience";
 
 import dotkomLogo from "@/assets/dotkom.png";
+//import slbLogo from "@/assets/slb_logo.jpeg";
 //import nodeLogo from "@/assets/nodekom.png";
 
 export const WorkExperience: WorkExperienceCardProps[] = [
@@ -15,14 +16,13 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         image: dotkomLogo
     },
     /*{
-        title: <span><span className="text-accent">Head</span> of the Welcoming Committee</span>,
-        employer: "Online, Student Association",
-        time_span: "Dec. 2024 - present",
+        title: <span>Student <span className="text-accent">Intern</span></span>,
+        employer: "SLB",
+        time_span: "jun. 2025 - aug. 2025",
         description: [
-            "Led a team of [TBD] in the planning of welcoming events for new students of Informatics at NTNU",
-            "Led the execution of a two-week long period of welcoming events for ~200 new students (both bachelor and masters)"
+            
         ],
-        image: nodeLogo
+        image: slbLogo
     },
     {
         title: <span><span className="text-accent">Deputy Head</span> of the Anniversary Committee</span>,
