@@ -34,7 +34,7 @@ export const skills: SkillsProps = {
         },
         {
             name: "Deno",
-            icon: "logos:deno"
+            icon: "lineicons:deno"
         },
         {
             name: "Express.js",
