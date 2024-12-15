@@ -13,7 +13,7 @@ const WorkExperienceCard: FC<WorkExperienceCardProps> = ({ title, employer, time
   return (
     <div className="flex flex-col p-4 gap-1 rounded-xl bg-primary">
         <div className="flex items-center justify-between">
-            {image && <Image src={image} alt={`${employer} logo`} width={70} />}
+            {image && <Image src={image} alt={`${employer} logo`} className="rounded-lg" width={70} />}
             <h3 className="text-xl text-text text-end flex-1 font-bold m-2">{title}</h3>
         </div>
 

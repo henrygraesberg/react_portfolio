@@ -1,8 +1,8 @@
 import { WorkExperienceCardProps } from "@/components/experience/WorkExperience";
 
-import dotkomLogo from "@/assets/dotkom.png";
-//import slbLogo from "@/assets/slb_logo.jpeg";
-//import nodeLogo from "@/assets/nodekom.png";
+import dotkomLogo from "@/assets/logos/dotkom.png";
+//import slbLogo from "@/assets/logos/slb_logo.jpeg";
+//import nodeLogo from "@/assets/logos/nodekom.png";
 
 export const WorkExperience: WorkExperienceCardProps[] = [
     {

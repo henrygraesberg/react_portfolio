@@ -1,8 +1,8 @@
 import { ProjectProps } from "@/components/Project";
 
-import PortfolioImage from "@/assets/react_portfolio.png";
-import OldPortfolioImage from "@/assets/old_Portfolio.png";
-import ShotegoriesImage from "@/assets/shotegories_screenshot.png"
+import PortfolioImage from "@/assets/projects/react_portfolio.png";
+import OldPortfolioImage from "@/assets/projects/old_portfolio.png";
+import ShotegoriesImage from "@/assets/projects/shotegories_screenshot.png";
 
 export const projects: ProjectProps[] = [
     {
