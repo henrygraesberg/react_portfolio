@@ -8,7 +8,7 @@ export const projects: ProjectProps[] = [
     {
         title: "Shotegories",
         url: "https://shotegories.graesberg.com",
-        urlShorthand: "shotregories.graesberg.com",
+        urlShorthand: "shotegories.graesberg.com",
         github: "https://git.graesberg.com/deno-shotegories",
         image: ShotegoriesImage,
         technologies: ["logos:deno", "logos:typescript-icon"],
