@@ -41,6 +41,10 @@ export const skills: SkillsProps = {
             icon: "simple-icons:express"
         },
         {
+            name: "PostgreSQL",
+            icon: "akar-icons:postgresql-fill"
+        },
+        {
             name: "Supabase",
             icon: "simple-icons:supabase"
         },
@@ -62,6 +66,14 @@ export const skills: SkillsProps = {
             name: "Vercel",
             icon: "simple-icons:vercel"
         },
+        {
+            name: "Docker",
+            icon: "mdi:docker"
+        },
+        {
+            name: "Terraform",
+            icon: "mdi:terraform"
+        }
     ],
     other: [
         {
