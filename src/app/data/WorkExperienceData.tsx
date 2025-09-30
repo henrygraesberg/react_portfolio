@@ -1,8 +1,8 @@
 import { WorkExperienceCardProps } from "@/components/experience/WorkExperience";
 
 import dotkomLogo from "@/assets/logos/dotkom.png";
-//import slbLogo from "@/assets/logos/slb_logo.jpeg";
-//import nodeLogo from "@/assets/logos/nodekom.png";
+import slbLogo from "@/assets/logos/slb_logo.jpeg";
+import nodeLogo from "@/assets/logos/nodekom.png";
 
 export const WorkExperience: WorkExperienceCardProps[] = [
     {
@@ -14,15 +14,7 @@ export const WorkExperience: WorkExperienceCardProps[] = [
             "Developed the public website of the student association"
         ],
         image: dotkomLogo
-    },
-    /*{
-        title: <span>Student <span className="text-accent">Intern</span></span>,
-        employer: "SLB Norway Technology Center",
-        time_span: "jun. 2025 - aug. 2025",
-        description: [
-            
-        ],
-        image: slbLogo
+        
     },
     {
         title: <span><span className="text-accent">Deputy Head</span> of the Anniversary Committee</span>,
@@ -30,10 +22,24 @@ export const WorkExperience: WorkExperienceCardProps[] = [
         time_span: "Oct. 2024 - present",
         description: [
             "Led a team of 10 people in the planning of a week-long event",
-            "Hosted a successful banquet with [TBD] attendees"
+            "Led cooperation with other committees to ensure smooth planning of the graphical profile and execution of the event",
+            //"Hosted a successful banquet with [TBD] attendees"
         ],
         image: nodeLogo
-    },*/
+    },
+    {
+        title: <span>Student <span className="text-accent">Intern</span></span>,
+        employer: "SLB Norway Technology Center",
+        time_span: "jun. 2025 - aug. 2025",
+        description: [
+            "Deployed Azure cloud infrastructure using Terraform",
+            "Deployed Python scripts to Azure Function Apps",
+            "Managed MS SQL servers and databases",
+            "Developed GUI using tkinter",
+            "Plotted data in python"
+        ],
+        image: slbLogo
+    },
     {
         title: <span>Game Development <span className="text-accent">Intern</span></span>,
         employer: "Innova Interactive Studios Co. Ltd.",
